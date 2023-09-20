@@ -3,19 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV</title>
+    <title>Accueil</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
 <header>
-    <img src="Photo_CV.png" width="150" alt="">
+    <a href="index.html">
+        <img src="Photo_CV.png" width="150" alt="">
+    </a>
     <p id="name">Simon DONNET</p>
     <p id="profession">Étudiant en Master Science des Données</p>
 </header>
-
+<a href="#" id="scrollToTopButton"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Fl%C3%A8che_Bleu.png" alt="Flèche vers le haut" width=50px></a> <!-- Bouton pour remonter en haut de la page -->
+<img src="https://cdn.icon-icons.com/icons2/1112/PNG/512/menucircularbutton_79284.png" alt="Menu" id="menuToggle" width=50px />
+<div id="menu">
+    <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="index2.html">Compétences</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<div id="Presentation">
+    <h2 id="presentationTitle">Présentation</h2>
+    <p id="presentationText">
+        Je suis étudiant en master Science des Données, passionné par le monde de l'analyse de données et de l'apprentissage automatique. Mon parcours académique a été jalonné de découvertes passionnantes et de réalisations enrichissantes, et je suis ravi de partager cela avec vous.
+        <br>
+        <h3>Mon Parcours Académique</h3>
+        <br>
+        Mon voyage dans le domaine de la science des données a débuté avec une solide formation en mathématiques et en informatique. Après avoir obtenu mon diplôme de licence en Informatique, j'ai choisi de me spécialiser dans la science des données pour mon master. Cette décision a été guidée par ma fascination pour la façon dont les données peuvent être utilisées pour résoudre des problèmes complexes et prendre des décisions éclairées.
+        <br>
+        <h3>Mes Expériences et Réalisations</h3>
+        <br>
+        Pendant mon parcours académique, j'ai eu la chance de travailler sur divers projets de recherche et de participer à des compétitions de science des données. Ces expériences m'ont permis d'acquérir une expertise pratique dans le domaine, notamment en matière de traitement de données, de modélisation prédictive et d'analyse de données volumineuses.
+        <br>
+        <h3>Mes Ambitions Futures</h3>
+        <br>
+        Mon objectif ultime est d'apporter une contribution significative à la société en utilisant les compétences en science des données que j'ai acquises. Je suis déterminé à relever des défis complexes, que ce soit dans le domaine de la santé, de la finance, de l'industrie ou d'autres secteurs. Je souhaite également continuer à me former et à rester à la pointe des avancées technologiques dans le domaine.
+        <br>
+        <h3>Ce Que Vous Trouverez sur Ce Site</h3>
+        <br>
+        Sur ce site, vous trouverez des articles, des projets, et des ressources liés à la science des données. J'espère que cela vous inspirera et vous aidera à explorer ce domaine fascinant. N'hésitez pas à me contacter si vous avez des questions, des idées de collaboration ou simplement si vous souhaitez discuter de science des données.
+        <br>
+        Merci de visiter mon site et de partager ce voyage avec moi !
+    </p>
+</div>
 <section id="education">
-    <h2 id="educationTitle">Formation</h2>
+    <h2 id="educationTitle">Formations</h2>
     <ul>
         <li>
             <a href="http://mastersid.univ-rouen.fr//" target="_blank">Master Science des Données</a>
@@ -28,7 +63,7 @@
     </ul>
 </section>
 <aside id="experience">
-    <h2 id="experienceTitle">Expérience Professionnelle</h2>
+    <h2 id="experienceTitle">Expériences Professionnelles</h2>
     <ul>
         <li>
             <h3>Stage en Data Science</h3>
@@ -43,40 +78,86 @@
 <section id="competences">
     <h2 id="competencesTitle">Compétences</h2>
     <ul>
-        <li>Analyse de données</li>
-        <li>Machine Learning</li>
-        <li>Apprentissage automatique</li>
-        <li>Statistiques</li>
-        <li>Extraction de données</li>
-        <li>Nettoyage de données</li>
-        <li>Visualisation de données</li>
-        <li>Traitement du langage naturel (NLP)</li>
-        <li>Deep Learning</li>
-        <li>Apprentissage supervisé</li>
-        <li>Apprentissage non supervisé</li>
-        <li>Apprentissage par renforcement</li>
+        <a href="index2.html#Analyse de données">
+            Analyse de données
+        </a>
+        <a href="index2.html#Machine Learning">
+            Machine Learning
+        </a>
+        <a href="index2.html#Statistiques">
+            Statistiques
+        </a>
+        <a href="index2.html#Extraction de données">
+            Extraction de données
+        </a>
+        <a href="index2.html#Nettoyage de données">
+            Nettoyage de données
+        </a>
+        <a href="index2.html#Visualisation de données">
+            Visualisation de données
+        </a>
+        <a href="index2.html#Traitement du langage naturel (NLP)">
+            Traitement du langage naturel (NLP)
+        </a>
+        <a href="index2.html#Deep Learning">
+            Deep Learning
+        </a>
+        <a href="index2.html#Apprentissage supervisé">
+            Apprentissage supervisé
+        </a>
+        <a href="index2.html#Apprentissage non supervisé">
+            Apprentissage non supervisé
+        </a>
+        <a href="index2.html#Apprentissage par renforcement">
+            Apprentissage par renforcement
+        </a>
     </ul>
 </section>
 <aside id="langages">
     <h2 id="langagesTitle">Langages utilisés</h2>
     <ul>
-        <li>Python (Pandas, Numpy, Matplotlib, Seaborn, Scipy, Scikit-Learn)
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png">
+        <li>
+            <a href="https://www.python.org/">
+                Python
+                (<a href="https://pandas.pydata.org/">Pandas</a>, <a href="https://numpy.org/">Numpy</a>, <a href="https://matplotlib.org/">Matplotlib</a>, <a href="https://seaborn.pydata.org/">Seaborn</a>, <a href="https://scipy.org/">Scipy</a>, <a href="https://scikit-learn.org/stable/">Scikit-Learn</a>)
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png" alt="">
+            </a>
         </li>
-        <li>HTML
-            <img src="https://assets.stickpng.com/images/5847f5bdcef1014c0b5e489c.png">
+        <li>
+            <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language">
+                HTML
+                <img src="https://assets.stickpng.com/images/5847f5bdcef1014c0b5e489c.png" alt="">
+            </a>
         </li>
-        <li>CSS
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png">
+        <li>
+            <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade">
+                CSS
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="">
+            </a>
         </li>
-        <li>XML
-            <img src="https://cdn.iconscout.com/icon/free/png-256/free-xml-file-2330558-1950399.png">
+        <li>
+            <a href="https://fr.wikipedia.org/wiki/Extensible_Markup_Language">
+                XML
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-xml-file-2330558-1950399.png" alt="">
+            </a>
         </li>
-        <li>SparkQL
-            <img src="https://www.svgrepo.com/show/374091/sparql.svg">
+        <li>
+            <a href="https://fr.wikipedia.org/wiki/SPARQL">
+                SPARQL
+                <img src="https://www.svgrepo.com/show/374091/sparql.svg" alt="">
+            </a>
         </li>
-        <li>Git / GitHub / GitLab
-            <img src="https://logos-marques.com/wp-content/uploads/2021/03/GitHub-Logo.png">
+        <li>
+            <a href="https://git-scm.com/">
+                Git
+            </a>
+            <a  href="https://github.com/">
+                GitHub
+            </a>
+            <a href="https://about.gitlab.com/fr-fr/">
+                GitLab
+            </a>
+            <img src="https://logos-marques.com/wp-content/uploads/2021/03/GitHub-Logo.png" alt="">
         </li>
     </ul>
 </aside>

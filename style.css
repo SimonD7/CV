@@ -2,7 +2,7 @@
 
 body {
     background-color: #FFFFFF;
-    font-family: Arial, sans-serif;
+    font-family: Montserrat, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -55,7 +55,7 @@ header p {
     border: black solid 3px;
 }
 
-ul {
+section ul, aside ul {
     list-style: none;
     padding: 0;
     text-align: left; /* Modifié pour aligner le texte à gauche dans les listes */
@@ -74,13 +74,17 @@ section {
     clear: both;
 }
 
+#definitions {
+    width: 100%;
+}
+
 aside {
     padding-right: 20px;
     width: 45%;
     float: right;
 }
 
-#competences li, #langages li {
+#competences ul a, #langages li {
     display: inline-block; /* Les éléments <li> sont affichés en ligne */
     background-color: #0295A9; /* Couleur de fond */
     color: #FFFFFF; /* Couleur du texte */
@@ -113,13 +117,17 @@ aside a {
     float: right;
 }
 
+#langages li a {
+    color: #FFFFFF;
+}
+
 /* Style pour les liens au survol */
 a:hover {
     text-decoration: underline;
 }
 
 /* Style pour les listes au survol */
-#competences li:hover, #langages li:hover {
+#competences ul a:hover, #langages li:hover {
     background-color: #FDD037;
 }
 
@@ -130,4 +138,60 @@ a:hover {
 header img:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+#scrollToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#menu {
+    position: fixed;
+    left: -250px; /* Masquez le menu en dehors de l'écran */
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: left 0.5s; /* Ajoutez une transition pour une animation fluide */
+}
+
+#menu ul {
+    list-style: none;
+    padding-top: 70px;
+    margin: 0;
+}
+
+#menu li {
+    padding: 20px;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style pour mettre en évidence l'élément actif */
+#menu li.active {
+    background-color: #007BFF;
+}
+
+#menuToggle {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 1; /* Placez le bouton au-dessus du menu */
+}
+
+#Presentation {
+    padding: 50px;
+    overflow: hidden; /* Pour résoudre le problème de débordement du contenu flottant */
+    border-bottom: black solid 3px;
 }
