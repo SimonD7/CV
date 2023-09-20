@@ -1,0 +1,133 @@
+/* style.css */
+
+body {
+    background-color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #12ADC1;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px;
+    overflow: hidden; /* Pour résoudre le problème de débordement du contenu flottant */
+    border-bottom: black solid 3px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    border-radius: 50%;
+    margin-left: 5%;
+    border: black solid 3px;
+    box-shadow: black 0 0 10px;
+}
+
+#name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    color: #FDD037;
+    margin: 0;
+    padding: 0;
+}
+
+header p {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+}
+
+#educationTitle,
+#experienceTitle,
+#competencesTitle,
+#langagesTitle {
+    background-color: #0295A9;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: black solid 3px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Modifié pour aligner le texte à gauche dans les listes */
+    display: none;
+}
+
+ul p {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+section {
+    padding-left: 20px;
+    width: 45%;
+    float: left;
+    clear: both;
+}
+
+aside {
+    padding-right: 20px;
+    width: 45%;
+    float: right;
+}
+
+#competences li, #langages li {
+    display: inline-block; /* Les éléments <li> sont affichés en ligne */
+    background-color: #0295A9; /* Couleur de fond */
+    color: #FFFFFF; /* Couleur du texte */
+    padding: 5px 10px; /* Espace intérieur autour des tags */
+    margin: 5px; /* Marge autour des tags */
+    border-radius: 20px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointer au survol */
+    transition: background-color 0.3s; /* Animation de changement de couleur au survol */
+}
+
+ul li {
+    text-align: center;
+}
+
+/* Ajout d'une règle pour les liens */
+section a {
+    color: #FDD037;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+aside a {
+    color: #FDD037;
+    text-decoration: none;
+}
+
+#langages img {
+    height: 30px;
+    margin-left: 10px;
+    float: right;
+}
+
+/* Style pour les liens au survol */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style pour les listes au survol */
+#competences li:hover, #langages li:hover {
+    background-color: #FDD037;
+}
+
+#competencesTitle:hover, #langagesTitle:hover, #educationTitle:hover, #experienceTitle:hover {
+    background-color: #FDD037;
+}
+
+header img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
